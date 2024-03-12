@@ -30,7 +30,7 @@ public class AppTest
         ArrayList<Integer> list = new ArrayList<>();
         Integer[] array = {3, 4};
         String result = new App().createUsername(list, array, "Mehmet", "Karatekin");
-        assertEquals("Karatekin0Mehmet", result);
+        assertEquals("Karatekin12Mehmet", result);
     }
     
     public void testEmptyArray() {
@@ -55,14 +55,14 @@ public class AppTest
         ArrayList<Integer> list = new ArrayList<>();
         Integer[] array = {};
         String result = new App().createUsername(list, array, "Mehmet", "Karatekin");
-        assertEquals("Karatekin0Mehmet", result);
+        assertEquals("KaratekinMehmet", result);
     }
     
     public void testAllParametersEmpty() {
         ArrayList<Integer> list = new ArrayList<>();
         Integer[] array = {};
         String result = new App().createUsername(list, array, "", "");
-        assertEquals("0", result);
+        assertEquals("", result);
     }
     
     public void testNegativeNumbers() {

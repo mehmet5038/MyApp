@@ -15,13 +15,29 @@ public class App
 //creates a mixed username of numbers and characters which depends on user's input
     
     public static String createUsername(ArrayList<Integer> list, Integer[] array, String string1, String string2) {
-    	Integer result = 0;
-    	for (Integer i : list) {
-			result += i;
-		}
-    	for (Integer i : array) {
-			result *= i;
-		}
+    	String result = "";
+    	if(list.isEmpty() && array.length != 0) {
+    		Integer temp = 1;
+    		for (Integer i : array) {
+    			temp *= i;
+    		}
+    		result = temp.toString();
+    	} else if(!list.isEmpty() && array.length == 0 ) {
+    		Integer temp = 0;
+    		for (Integer i : list) {
+    			temp += i;
+    		}
+    		result = temp.toString();
+    	} else if(!list.isEmpty() && array.length != 0) {
+    		Integer temp = 0;
+    		for (Integer i : list) {
+    			temp += i;
+    		}
+        	for (Integer i : array) {
+    			temp *= i;
+    		}
+        	result = temp.toString();
+    	}  	
     	return string2 + result.toString() + string1;
     }
 	

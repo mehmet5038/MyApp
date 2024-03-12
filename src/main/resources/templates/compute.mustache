@@ -3,18 +3,27 @@
 Your username is {{result}}
 
 <form action="compute" method="post">
-    <label for="Enter Integer List:">List:</label><br>
-    <textarea id="list" name="list" rows="10" cols="30"></textarea><br><br>
+    <div style="display: flex; flex-direction: row;">
+        <div style="margin-right: 20px;">
+            <label for="ArrayList">Enter an Integer ArrayList:</label><br>
+            <textarea id="list" name="list" rows="10" cols="30"></textarea><br><br>
+        </div>
 
-    <label for="Enter Integer Array:">Array:</label><br>
-    <textarea id="array" name="array" rows="10" cols="30"></textarea><br><br>
+        <div style="margin-right: 20px;">
+            <label for="Array">Enter an Integer Array:</label><br>
+            <textarea id="array" name="array" rows="10" cols="30"></textarea><br><br>
+        </div>
 
-    <label for="Enter String 1:">String 1:</label><br>
-    <textarea id="string1" name="string1" rows="10" cols="30"></textarea><br><br>
+        <div style="margin-right: 20px;">
+            <label for="String1">Enter String 1:</label><br>
+            <textarea id="string1" name="string1" rows="10" cols="30"></textarea><br><br>
+        </div>
 
-    <label for="Enter String 2:">String 2:</label><br>
-    <textarea id="string2" name="string2" rows="10" cols="30"></textarea><br><br>
+        <div>
+            <label for="String2">Enter String 2:</label><br>
+            <textarea id="string2" name="string2" rows="10" cols="30"></textarea><br><br>
+        </div>
+    </div>
 
     <input type="submit">
 </form>
-
