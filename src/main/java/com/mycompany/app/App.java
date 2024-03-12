@@ -28,13 +28,8 @@ public class App
     public static void main( String[] args )
     {
     	port(getHerokuAssignedPort());
-
-        get("/", (req, res) -> "Hi, enter /compute to end of the link in the address tab to continue");
-
+        get("/", (req, res) -> "Welcome to my program, please enter /compute to end of the link in the address tab above to continue! :)");
         post("/compute", (req, res) -> {
-          //System.out.println(req.queryParams("input1"));
-          //System.out.println(req.queryParams("input2"));
-
           String input1 = req.queryParams("list");
           java.util.Scanner sc1 = new java.util.Scanner(input1);
           sc1.useDelimiter("[;\r\n]+");

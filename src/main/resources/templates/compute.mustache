@@ -1,13 +1,20 @@
 <title>Username Creator</title>
-  <h1>Type your inputs in specified areas and hit submit. Don't forget to press enter while seperating elements!</h1>
-    Your username is {{result}}
+<h1>Type your inputs in specified areas and hit submit. Don't forget to press enter while separating elements!</h1>
+Your username is {{result}}
 
+<form action="compute" method="post">
+    <label for="Enter Integer List:">List:</label><br>
+    <textarea id="list" name="list" rows="10" cols="30"></textarea><br><br>
 
-  <form action="compute" method="post">
-        <textarea name="list" rows="10" cols="30"></textarea>
-        <textarea name="array" rows="10" cols="30"></textarea>
-	<textarea name="string1" rows="10" cols="30"></textarea>
-        <textarea name="string2" rows="10" cols="30"></textarea>
-        <br>
-        <input type="submit">
-  </form>
+    <label for="Enter Integer Array:">Array:</label><br>
+    <textarea id="array" name="array" rows="10" cols="30"></textarea><br><br>
+
+    <label for="Enter String 1:">String 1:</label><br>
+    <textarea id="string1" name="string1" rows="10" cols="30"></textarea><br><br>
+
+    <label for="Enter String 2:">String 2:</label><br>
+    <textarea id="string2" name="string2" rows="10" cols="30"></textarea><br><br>
+
+    <input type="submit">
+</form>
+
